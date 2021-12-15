@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!--
+    여기에 필요한 form 컨트롤을 배치하세요
+  -->
+  <div class="form">
+    <label class="input-form">
+      <span>First name</span>
+      <input id="id" type="text">
+      <span id="checkID"></span>
+      <span class="message">
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+      </span>
+    </label>
+
+    <label class="input-form valid">
+      <span>Phone number</span>
+      <input id="pw" type="text">
+      <span class="message">
+        <span id="checkPW"></span>
+        <i class="fa fa-check-circle" aria-hidden="true"></i>
+      </span>
+    </label>
+
+    <label class="input-form invalid">
+      <span>Confirm phone number</span>
+      <input id="pw2" type="text">
+      <span class="message">
+        <span id="checkPW2"></span>
+        <i class="fa fa-times" aria-hidden="true"></i>
+        <!-- Those phone numbers don't match. Please check and try again. -->
+      </span>
+    </label>
+  </div>
+
+  <div id="invalid-message"></div>
+  <button id="btn-signup">회원가입</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
